@@ -1,47 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  Award,
-  Briefcase,
-  Users,
-  Target,
-  Layers,
-  TrendingUp,
-} from "lucide-react";
-
-const highlights = [
-  {
-    icon: Briefcase,
-    label: "阿里钉钉",
-    desc: "AI 应用专家",
-  },
-  {
-    icon: Award,
-    label: "企智引擎",
-    desc: "科技有限公司 CEO",
-  },
-  {
-    icon: Layers,
-    label: "10 年",
-    desc: "产品总监经验",
-  },
-  {
-    icon: Target,
-    label: "5 年",
-    desc: "AI 产品设计与管理",
-  },
-  {
-    icon: Users,
-    label: "1 亿+",
-    desc: "累计 2C 用户",
-  },
-  {
-    icon: TrendingUp,
-    label: "5 万+",
-    desc: "累计 2B 用户",
-  },
-];
+import { Target } from "lucide-react";
 
 const industries = [
   "电商",
@@ -114,9 +74,7 @@ export default function Team() {
               <h3 className="relative text-2xl font-bold text-white mb-2">
                 阿里钉钉 AI 应用专家
               </h3>
-              <p className="relative text-amber-400 font-medium mb-6">
-                成都企智引擎科技有限公司 CEO
-              </p>
+
 
               <div className="relative space-y-3">
                 {[
@@ -199,24 +157,7 @@ export default function Team() {
               </div>
             </div>
 
-            {/* Highlights Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {highlights.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={item.label}
-                    className="p-4 rounded-xl bg-[#F1F5F9] border border-[#E2E8F0]"
-                  >
-                    <Icon size={18} className="text-[#D97706] mb-2" />
-                    <div className="text-lg font-bold text-[#0F172A]">
-                      {item.label}
-                    </div>
-                    <div className="text-xs text-[#94A3B8]">{item.desc}</div>
-                  </div>
-                );
-              })}
-            </div>
+
           </div>
         </div>
       </div>
