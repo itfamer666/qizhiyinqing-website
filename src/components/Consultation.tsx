@@ -71,7 +71,8 @@ export default function Consultation() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400">电话咨询</p>
-                    <p className="text-white font-medium">18599965557</p>
+                    <p className="text-white font-medium">18599965557（刘）</p>
+                    <p className="text-white font-medium">15108209229（吴）</p>
                   </div>
                 </div>
 

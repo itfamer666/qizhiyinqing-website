@@ -61,8 +61,8 @@ export default function Header({
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-2">
+          {/* Desktop CTA - hidden */}
+          <div className="hidden md:flex items-center gap-2" style={{ display: 'none' }}>
             <Button
               variant="ghost"
               size="sm"
@@ -104,7 +104,7 @@ export default function Header({
                 {link.label}
               </a>
             ))}
-            <div className="pt-3 flex gap-2 border-t border-border mt-3">
+            <div className="pt-3 flex gap-2 border-t border-border mt-3" style={{ display: 'none' }}>
               <Button
                 variant="outline"
                 size="sm"
