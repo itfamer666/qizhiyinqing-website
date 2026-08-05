@@ -15,6 +15,8 @@ import { Send, Phone, MapPin, CheckCircle2 } from "lucide-react";
 
 export default function Consultation() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -24,10 +26,41 @@ export default function Consultation() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          company: "",
+          phone: "",
+          email: "",
+          service: "",
+          message: "",
+        });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError(data.error || "提交失败，请稍后重试");
+      }
+    } catch (err) {
+      setError("网络错误，请稍后重试或直接拨打电话联系我们");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -222,11 +255,24 @@ export default function Consultation() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-[#D97706] hover:bg-[#B45309] text-white rounded-xl h-12 text-base"
+                  disabled={submitting}
+                  className="w-full bg-[#D97706] hover:bg-[#B45309] text-white rounded-xl h-12 text-base disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send size={18} className="mr-2" />
-                  提交咨询
+                  {submitting ? (
+                    <>
+                      <div className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />
+                      提交中...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} className="mr-2" />
+                      提交咨询
+                    </>
+                  )}
                 </Button>
+                {error && (
+                  <p className="text-red-400 text-sm text-center">{error}</p>
+                )}
               </form>
             )}
           </div>
