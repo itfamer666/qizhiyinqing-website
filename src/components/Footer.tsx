@@ -19,7 +19,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="企智引擎"
-                className="h-9 w-9 object-contain"
+                className="h-9 w-9 object-contain mix-blend-multiply"
               />
               <span className="text-lg font-bold text-white tracking-tight">
                 企智引擎
