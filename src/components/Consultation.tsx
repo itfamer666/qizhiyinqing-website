@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Send, Phone, Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { Send, Phone, MapPin, CheckCircle2 } from "lucide-react";
 
 export default function Consultation() {
   const [submitted, setSubmitted] = useState(false);
@@ -71,27 +71,17 @@ export default function Consultation() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400">电话咨询</p>
-                    <p className="text-white font-medium">400-888-0123</p>
+                    <p className="text-white font-medium">18599965557</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center">
-                    <Mail size={18} className="text-amber-400" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-slate-400">邮件联系</p>
-                    <p className="text-white font-medium">
-                      contact@qizhiyinqing.com
-                    </p>
-                  </div>
-                </div>
+
                 <div className="flex items-center gap-4">
                   <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center">
                     <MapPin size={18} className="text-amber-400" />
                   </div>
                   <div>
                     <p className="text-sm text-slate-400">公司地址</p>
-                    <p className="text-white font-medium">成都市高新区</p>
+                    <p className="text-white font-medium">成都产投科技创新中心 7楼</p>
                   </div>
                 </div>
               </div>
