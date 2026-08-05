@@ -47,7 +47,7 @@ const services = [
   {
     id: 4,
     icon: Code2,
-    title: "AI 定制",
+    title: "AI 定制（FDE）",
     subtitle: "工程师驻场给你干",
     metric: "14天上线",
     color: "from-amber-500/10 to-amber-600/5",

@@ -4,7 +4,7 @@ const serviceLinks = [
   { icon: Mic, label: "AI 秘书" },
   { icon: TrendingUp, label: "AI 销售" },
   { icon: BookOpen, label: "AI 知识库" },
-  { icon: Code2, label: "AI 定制" },
+  { icon: Code2, label: "AI 定制（FDE）" },
   { icon: GraduationCap, label: "AI 培训" },
 ];
 

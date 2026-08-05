@@ -201,7 +201,7 @@ export default function Consultation() {
                         AI 知识库构建
                       </SelectItem>
                       <SelectItem value="training">AI 应用培训</SelectItem>
-                      <SelectItem value="custom">AI 应用定制</SelectItem>
+                      <SelectItem value="custom">AI 应用定制（FDE）</SelectItem>
                       <SelectItem value="all">全部了解</SelectItem>
                     </SelectContent>
                   </Select>

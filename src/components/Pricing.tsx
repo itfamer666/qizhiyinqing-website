@@ -41,7 +41,7 @@ const plans = [
     popular: false,
   },
   {
-    name: "AI 应用定制",
+    name: "AI 应用定制（FDE）",
     standardPrice: "2,000",
     standardUnit: "元/天 起",
     privatePrice: "30,000",

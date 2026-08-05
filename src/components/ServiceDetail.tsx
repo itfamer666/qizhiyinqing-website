@@ -89,7 +89,7 @@ const serviceDetails = [
   {
     id: 4,
     icon: Code2,
-    title: "AI 应用定制",
+    title: "AI 应用定制（FDE）",
     headline: "派工程师到你公司驻场干活",
     tags: ["需求诊断", "场景开发", "上线陪跑"],
     painPoints: [
