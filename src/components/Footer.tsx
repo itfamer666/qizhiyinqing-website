@@ -1,4 +1,5 @@
 import { Mic, TrendingUp, BookOpen, Code2, GraduationCap } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const serviceLinks = [
   { icon: Mic, label: "AI 秘书" },
@@ -16,11 +17,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <img
-                src="/logo.png"
-                alt="企智引擎"
-                className="h-9 w-9 object-contain mix-blend-multiply"
-              />
+              <Logo className="h-9 w-9 text-white" />
               <span className="text-lg font-bold text-white tracking-tight">
                 企智引擎
               </span>

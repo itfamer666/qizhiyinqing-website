@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { label: "服务一览", href: "#services" },
@@ -40,11 +41,7 @@ export default function Header({
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5">
-            <img
-              src="/logo.png"
-              alt="企智引擎"
-              className="h-9 w-9 object-contain"
-            />
+            <Logo className="h-9 w-9 text-[#0F172A]" />
             <span className="text-lg font-bold text-[#0F172A] tracking-tight">
               企智引擎
             </span>
