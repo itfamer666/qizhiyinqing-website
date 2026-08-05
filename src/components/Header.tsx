@@ -9,6 +9,7 @@ const navLinks = [
   { label: "服务一览", href: "#services" },
   { label: "服务详情", href: "#details" },
   { label: "客户案例", href: "#cases" },
+  { label: "服务团队", href: "#team" },
   { label: "价格方案", href: "#pricing" },
   { label: "联系我们", href: "#contact" },
 ];

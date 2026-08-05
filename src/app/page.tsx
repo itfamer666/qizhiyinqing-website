@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import ServicesOverview from "@/components/ServicesOverview";
 import ServiceDetail from "@/components/ServiceDetail";
 import Cases from "@/components/Cases";
+import Team from "@/components/Team";
 import Pricing from "@/components/Pricing";
 import Consultation from "@/components/Consultation";
 import AuthModal from "@/components/AuthModal";
@@ -39,6 +40,7 @@ export default function Home() {
         <ServicesOverview />
         <ServiceDetail />
         <Cases />
+        <Team />
         <Pricing />
         <Consultation />
       </main>
