@@ -16,9 +16,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5">
-                <span className="text-sm font-bold text-amber-400">企</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="企智引擎"
+                className="h-9 w-9 object-contain"
+              />
               <span className="text-lg font-bold text-white tracking-tight">
                 企智引擎
               </span>

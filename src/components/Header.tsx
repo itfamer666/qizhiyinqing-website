@@ -40,9 +40,11 @@ export default function Header({
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0F172A]">
-              <span className="text-sm font-bold text-amber-400">企</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="企智引擎"
+              className="h-9 w-9 object-contain"
+            />
             <span className="text-lg font-bold text-[#0F172A] tracking-tight">
               企智引擎
             </span>
