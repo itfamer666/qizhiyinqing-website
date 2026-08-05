@@ -1,11 +1,11 @@
 import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// 邮件配置 - 请根据实际邮箱服务修改
+// 邮件配置 - QQ 邮箱
 const SMTP_CONFIG = {
   host: process.env.SMTP_HOST || "smtp.qq.com",
   port: parseInt(process.env.SMTP_PORT || "465"),
-  secure: true,
+  secure: true, // 使用 SSL
   auth: {
     user: process.env.SMTP_USER || "",
     pass: process.env.SMTP_PASS || "",
