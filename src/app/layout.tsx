@@ -24,9 +24,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "企智引擎 - 让 AI 真正走进你公司干活",
     description:
-      "五大AI服务覆盖企业核心业务场景，营销获客、客户服务、知识管理、财务风控、高效办公。",
+      "五大AI服务覆盖企业核心业务场景，营销获客、客户服务、知识管理、财务风控、高效办公。日常省时30%+，最快14天上线。",
     type: "website",
     locale: "zh_CN",
+    siteName: "企智引擎",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "企智引擎 - 让 AI 真正走进你公司干活",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "企智引擎 - 让 AI 真正走进你公司干活",
+    description: "五大AI服务覆盖企业核心业务场景，帮助企业快速落地AI。",
+    images: ["/og-image.png"],
   },
 };
 
