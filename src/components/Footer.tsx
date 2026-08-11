@@ -85,9 +85,19 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} 企智引擎. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <p className="text-sm text-slate-500">
+              &copy; {new Date().getFullYear()} 企智引擎. All rights reserved.
+            </p>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-slate-500 hover:text-slate-400 transition-colors"
+            >
+              蜀ICP备2026045215号-1
+            </a>
+          </div>
           <p className="text-sm text-slate-500">
             让所有企业实现 AGI
           </p>
