@@ -150,7 +150,7 @@ export default function Pricing() {
 
               {/* CTA */}
               <a
-                href="#contact"
+                href="/contact"
                 className={`mt-8 block w-full text-center py-3 rounded-xl text-sm font-medium transition-all ${
                   plan.popular
                     ? "bg-[#D97706] hover:bg-[#B45309] text-white shadow-md shadow-amber-500/20"
