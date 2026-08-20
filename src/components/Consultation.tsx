@@ -90,80 +90,22 @@ export default function Consultation() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
-          {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-8">
-            <div>
-              <h3 className="text-xl font-bold text-white mb-6">
-                联系方式
-              </h3>
-              <div className="space-y-5">
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center">
-                    <Phone size={18} className="text-amber-400" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-slate-400">电话咨询</p>
-                    <p className="text-white font-medium">18599965557（刘）</p>
-                    <p className="text-white font-medium">15108209229（吴）</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center">
-                    <MapPin size={18} className="text-amber-400" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-slate-400">公司地址</p>
-                    <p className="text-white font-medium">成都产投科技创新中心 7楼</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Quick info */}
-            <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-              <h4 className="text-sm font-semibold text-white mb-3">
-                为什么选择企智引擎？
-              </h4>
-              <ul className="space-y-2.5">
-                {[
-                  "工程师驻场，不是远程忽悠",
-                  "14天快速上线，不拖泥带水",
-                  "数据说话，效果可量化",
-                  "售后陪跑，上线不是终点",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-sm text-slate-300"
-                  >
-                    <CheckCircle2
-                      size={14}
-                      className="text-amber-400 shrink-0"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
+        <div className="max-w-3xl mx-auto">
           {/* Form */}
-          <div className="lg:col-span-3">
-            {submitted ? (
-              <div className="flex flex-col items-center justify-center py-20 text-center">
-                <div className="h-16 w-16 rounded-full bg-emerald-500/10 flex items-center justify-center mb-5">
-                  <CheckCircle2 size={32} className="text-emerald-400" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">
-                  提交成功
-                </h3>
-                <p className="text-slate-400">
-                  我们的顾问会在 24 小时内联系您
-                </p>
+          {submitted ? (
+            <div className="flex flex-col items-center justify-center py-20 text-center">
+              <div className="h-16 w-16 rounded-full bg-emerald-500/10 flex items-center justify-center mb-5">
+                <CheckCircle2 size={32} className="text-emerald-400" />
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <h3 className="text-xl font-bold text-white mb-2">
+                提交成功
+              </h3>
+              <p className="text-slate-400">
+                我们的顾问会在 24 小时内联系您
+              </p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm text-slate-400 mb-1.5">
@@ -275,9 +217,63 @@ export default function Consultation() {
                 )}
               </form>
             )}
+
+            {/* Contact Info - Below Form */}
+            <div className="mt-12 pt-10 border-t border-white/10">
+              <h3 className="text-xl font-bold text-white mb-6 text-center">
+                联系方式
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-lg bg-white/5 flex items-center justify-center">
+                    <Phone size={20} className="text-amber-400" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-400">电话咨询</p>
+                    <p className="text-white font-medium">18599965557（刘）</p>
+                    <p className="text-white font-medium">15108209229（吴）</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-lg bg-white/5 flex items-center justify-center">
+                    <MapPin size={20} className="text-amber-400" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-400">公司地址</p>
+                    <p className="text-white font-medium">成都产投科技创新中心 7楼</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick info */}
+              <div className="mt-8 bg-white/5 rounded-2xl p-6 border border-white/10 max-w-2xl mx-auto">
+                <h4 className="text-sm font-semibold text-white mb-3 text-center">
+                  为什么选择企智引擎？
+                </h4>
+                <ul className="space-y-2.5">
+                  {[
+                    "工程师驻场，不是远程忽悠",
+                    "14天快速上线，不拖泥带水",
+                    "数据说话，效果可量化",
+                    "售后陪跑，上线不是终点",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 text-sm text-slate-300"
+                    >
+                      <CheckCircle2
+                        size={14}
+                        className="text-amber-400 shrink-0"
+                      />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
