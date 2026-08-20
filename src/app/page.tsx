@@ -8,7 +8,6 @@ import ServiceDetail from "@/components/ServiceDetail";
 import Cases from "@/components/Cases";
 import Team from "@/components/Team";
 import Pricing from "@/components/Pricing";
-import Consultation from "@/components/Consultation";
 import AuthModal from "@/components/AuthModal";
 import Footer from "@/components/Footer";
 
@@ -42,7 +41,6 @@ export default function Home() {
         <Cases />
         <Team />
         <Pricing />
-        <Consultation />
       </main>
 
       <Footer />

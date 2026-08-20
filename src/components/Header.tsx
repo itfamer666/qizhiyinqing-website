@@ -6,12 +6,15 @@ import { Menu, X } from "lucide-react";
 import Logo from "@/components/Logo";
 
 const navLinks = [
-  { label: "服务一览", href: "#services" },
+  { label: "AI 秘书", href: "/ai-mishu.html" },
+  { label: "AI 销冠", href: "/ai-xiaoguan.html" },
+  { label: "AI 销售助理", href: "/ai-zhuli.html" },
+  { label: "AI 知识库", href: "/ai-zhishiku.html" },
   { label: "服务详情", href: "#details" },
   { label: "客户案例", href: "#cases" },
   { label: "服务团队", href: "#team" },
   { label: "价格方案", href: "#pricing" },
-  { label: "联系我们", href: "#contact" },
+  { label: "联系我们", href: "/contact" },
 ];
 
 export default function Header({

@@ -84,7 +84,7 @@ export default function Hero() {
               className="bg-[#D97706] hover:bg-[#B45309] text-white rounded-xl px-8 h-12 text-base shadow-lg shadow-amber-500/20"
               asChild
             >
-              <a href="#contact">
+              <a href="/contact">
                 预约演示
                 <ArrowRight size={18} className="ml-2" />
               </a>

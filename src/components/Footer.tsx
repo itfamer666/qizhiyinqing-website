@@ -1,12 +1,12 @@
-import { Mic, TrendingUp, BookOpen, Code2, GraduationCap } from "lucide-react";
 import Logo from "@/components/Logo";
 
 const serviceLinks = [
-  { icon: Mic, label: "AI 秘书" },
-  { icon: TrendingUp, label: "AI 销售" },
-  { icon: BookOpen, label: "AI 知识库" },
-  { icon: Code2, label: "AI 定制（FDE）" },
-  { icon: GraduationCap, label: "AI 培训" },
+  { label: "AI 秘书", href: "/ai-mishu.html" },
+  { label: "AI 销冠", href: "/ai-xiaoguan.html" },
+  { label: "AI 销售助理", href: "/ai-zhuli.html" },
+  { label: "AI 知识库", href: "/ai-zhishiku.html" },
+  { label: "服务详情", href: "#details" },
+  { label: "价格方案", href: "#pricing" },
 ];
 
 export default function Footer() {
@@ -36,7 +36,7 @@ export default function Footer() {
               {serviceLinks.map((item) => (
                 <li key={item.label}>
                   <a
-                    href="#services"
+                    href={item.href}
                     className="text-sm text-slate-400 hover:text-white transition-colors"
                   >
                     {item.label}
@@ -67,18 +67,24 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">支持</h4>
             <ul className="space-y-2.5">
-              {["帮助中心", "隐私政策", "服务条款", "联系我们"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-sm text-slate-400 hover:text-white transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {["帮助中心", "隐私政策", "服务条款"].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="/contact"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  联系我们
+                </a>
+              </li>
             </ul>
           </div>
         </div>
