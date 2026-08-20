@@ -48,13 +48,18 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">公司</h4>
             <ul className="space-y-2.5">
-              {["关于我们", "客户案例", "合作伙伴", "加入我们"].map((item) => (
-                <li key={item}>
+              {[
+                { label: "关于我们", href: "/#team" },
+                { label: "客户案例", href: "/#cases" },
+                { label: "合作伙伴", href: "/#partners" },
+                { label: "加入我们", href: "#" },
+              ].map((item) => (
+                <li key={item.label}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-sm text-slate-400 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
