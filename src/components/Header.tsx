@@ -111,7 +111,7 @@ export default function Header({
                 size="sm"
                 className="flex-1"
                 onClick={() => {
-                  onLoginClick();
+                  onLoginClick?.();
                   setMobileOpen(false);
                 }}
               >
@@ -121,7 +121,7 @@ export default function Header({
                 size="sm"
                 className="flex-1 bg-[#D97706] hover:bg-[#B45309] text-white"
                 onClick={() => {
-                  onRegisterClick();
+                  onRegisterClick?.();
                   setMobileOpen(false);
                 }}
               >

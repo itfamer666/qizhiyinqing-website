@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0F172A] border-t border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
@@ -53,7 +53,7 @@ export default function Footer() {
                 { label: "关于我们", href: "/#team" },
                 { label: "客户案例", href: "/#cases" },
                 { label: "合作伙伴", href: "/#partners" },
-                { label: "加入我们", href: "#" },
+                { label: "联系我们", href: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -67,30 +67,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
-          <div>
-            <h4 className="text-sm font-semibold text-white mb-4">支持</h4>
-            <ul className="space-y-2.5">
-              {["帮助中心", "隐私政策", "服务条款"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-sm text-slate-400 hover:text-white transition-colors"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-              <li>
-                <a
-                  href="/contact"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
-                >
-                  联系我们
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom */}
