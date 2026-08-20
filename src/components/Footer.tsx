@@ -5,8 +5,6 @@ const serviceLinks = [
   { label: "AI 销冠", href: "/ai-xiaoguan.html" },
   { label: "AI 销售助理", href: "/ai-zhuli.html" },
   { label: "AI 知识库", href: "/ai-zhishiku.html" },
-  { label: "服务详情", href: "#details" },
-  { label: "价格方案", href: "#pricing" },
 ];
 
 export default function Footer() {
