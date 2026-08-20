@@ -5,6 +5,7 @@ const serviceLinks = [
   { label: "AI 销冠", href: "/ai-xiaoguan.html" },
   { label: "AI 销售助理", href: "/ai-zhuli.html" },
   { label: "AI 知识库", href: "/ai-zhishiku.html" },
+  { label: "FDE", href: "/fde-service.html" },
 ];
 
 export default function Footer() {

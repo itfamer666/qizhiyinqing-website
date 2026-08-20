@@ -11,6 +11,7 @@ const navLinks = [
   { label: "AI 销冠", href: "/ai-xiaoguan.html" },
   { label: "AI 销售助理", href: "/ai-zhuli.html" },
   { label: "AI 知识库", href: "/ai-zhishiku.html" },
+  { label: "FDE", href: "/fde-service.html" },
   { label: "联系我们", href: "/contact" },
 ];
 
@@ -18,8 +19,8 @@ export default function Header({
   onLoginClick,
   onRegisterClick,
 }: {
-  onLoginClick: () => void;
-  onRegisterClick: () => void;
+  onLoginClick?: () => void;
+  onRegisterClick?: () => void;
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
